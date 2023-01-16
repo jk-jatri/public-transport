@@ -72,7 +72,7 @@
           "fromStoppage":"Dhaka",
           "toStoppage":"Mymensingh",
           "tripDate": "2023-01-15",
-          "vehicleType":"NON-AC",
+          "vehicleType":"AC",
           "fare": 350,
           "direction": "UP"
      },
@@ -105,7 +105,7 @@
           "fromStoppage":"Cumilla",
           "toStoppage":"Chattogram",
           "tripDate": "2023-01-16",
-          "vehicleType":"NON-AC",
+          "vehicleType":"AC",
           "fare": 1200,
           "direction": "UP"
      },
