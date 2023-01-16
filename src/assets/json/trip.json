@@ -77,7 +77,7 @@
           "direction": "UP"
      },
      {
-          "_id": "12trip8",
+          "_id": "21trip8",
           "status": true,
           "tripCode": "2021",
           "fromStoppage":"Cumilla",
@@ -85,7 +85,7 @@
           "tripDate": "2023-01-14",
           "vehicleType":"NON-AC",
           "fare": 1200,
-          "direction": "UP"
+          "direction": "DOWN"
      },
      {
           "_id": "12trip9",

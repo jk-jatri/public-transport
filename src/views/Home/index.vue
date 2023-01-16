@@ -25,8 +25,6 @@
      const filteredTable = ref({})
 
      const tripDataRender = ((filterData)=>{
-          console.log(filterData);
-
           filteredTable.value = availabletrips.filter((item)=>{
                let result = true 
                filterData.fromStoppage && (result &&= item.fromStoppage === filterData.fromStoppage)
@@ -36,7 +34,6 @@
           })
           tripData.value = filteredTable.value
      })
-
 
      fromStoppages.value = tripData.value.map(item => {
           return item.fromStoppage

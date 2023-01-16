@@ -1,5 +1,5 @@
 <template>
-     <div class="rounded-lg border border-gray-300 p-3">
+     <div class="rounded-lg bg-gray-100 border border-gray-300 p-3">
           <form @submit.prevent="submitForm(filterData)" class="flex justify-start gap-x-3">
                <dropdown
                     :id="'fromStoppage'"
@@ -20,7 +20,7 @@
                     :label="'Trip Date'"
                     v-model="filterData.tripdate"
                />
-               <button type="submit" class="bg-gray-100 w-1/4 rounded-lg border-gray-300">Submit</button>
+               <button type="submit" class="bg-white w-1/4 rounded-lg border-gray-300">Submit</button>
           </form>
      </div>
 </template>
