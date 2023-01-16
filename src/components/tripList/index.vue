@@ -1,7 +1,7 @@
 <template>
      <table class="border-collapse border border-slate-500 table-auto w-full">
           <thead>
-               <tr>
+               <tr class="bg-gray-100">
                     <th class="border border-slate-600">SL.</th>
                     <th class="border border-slate-600">Trip Code</th>
                     <th class="border border-slate-600">Trip Date & Time</th>
