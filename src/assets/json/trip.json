@@ -1,6 +1,6 @@
 [
      {
-          "_id": "12trip1",
+          "_id": "12trip01",
           "status": true,
           "tripCode": "1234",
           "fromStoppage":"Dhaka",
@@ -11,8 +11,8 @@
           "direction": "UP"
      },
      {
-          "_id": "12trip2",
-          "status": true,
+          "_id": "12trip02",
+          "status": false,
           "tripCode": "5678",
           "fromStoppage":"Barishal",
           "toStoppage":"Chattogram",
@@ -22,8 +22,8 @@
           "direction": "UP"
      },
      {
-          "_id": "12trip3",
-          "status": true,
+          "_id": "12trip03",
+          "status": false,
           "tripCode": "9101",
           "fromStoppage":"Dhaka",
           "toStoppage":"Barishal",
@@ -33,8 +33,8 @@
           "direction": "UP"
      },
      {
-          "_id": "21trip4",
-          "status": true,
+          "_id": "21trip04",
+          "status": false,
           "tripCode": "1213",
           "fromStoppage":"Dhaka",
           "toStoppage":"Cumilla",
@@ -44,7 +44,7 @@
           "direction": "DOWN"
      },
      {
-          "_id": "12trip5",
+          "_id": "12trip05",
           "status": true,
           "tripCode": "1415",
           "fromStoppage":"Dhaka",
@@ -55,8 +55,8 @@
           "direction": "UP"
      },
      {
-          "_id": "12trip6",
-          "status": true,
+          "_id": "12trip06",
+          "status": false,
           "tripCode": "1617",
           "fromStoppage":"Cumilla",
           "toStoppage":"Chattogram",
@@ -66,8 +66,8 @@
           "direction": "UP"
      },
      {
-          "_id": "12trip7",
-          "status": true,
+          "_id": "12trip07",
+          "status": false,
           "tripCode": "1819",
           "fromStoppage":"Dhaka",
           "toStoppage":"Mymensingh",
@@ -77,8 +77,8 @@
           "direction": "UP"
      },
      {
-          "_id": "21trip8",
-          "status": true,
+          "_id": "21trip08",
+          "status": false,
           "tripCode": "2021",
           "fromStoppage":"Cumilla",
           "toStoppage":"Chattogram",
@@ -88,7 +88,7 @@
           "direction": "DOWN"
      },
      {
-          "_id": "12trip9",
+          "_id": "12trip09",
           "status": true,
           "tripCode": "2223",
           "fromStoppage":"Dhaka",
@@ -100,7 +100,7 @@
      },
      {
           "_id": "12trip10",
-          "status": true,
+          "status": false,
           "tripCode": "2425",
           "fromStoppage":"Cumilla",
           "toStoppage":"Chattogram",
@@ -111,7 +111,7 @@
      },
      {
           "_id": "12trip11",
-          "status": true,
+          "status": false,
           "tripCode": "2627",
           "fromStoppage":"Dhaka",
           "toStoppage":"Mymensingh",
@@ -122,11 +122,451 @@
      },
      {
           "_id": "21trip12",
-          "status": true,
+          "status": false,
           "tripCode": "2829",
           "fromStoppage":"Barishal",
           "toStoppage":"Dhaka",
           "tripDate": "2023-01-14",
+          "vehicleType":"AC",
+          "fare": 600,
+          "direction": "DOWN"
+     },
+     {
+          "_id": "21trip13",
+          "status": true,
+          "tripCode": "3031",
+          "fromStoppage":"Chattogram",
+          "toStoppage":"Cumilla",
+          "tripDate": "2023-01-18",
+          "vehicleType":"NON-AC",
+          "fare": 1200,
+          "direction": "DOWN"
+     },
+     {
+          "_id": "12trip14",
+          "status": true,
+          "tripCode": "3233",
+          "fromStoppage":"Cumilla",
+          "toStoppage":"Mymensingh",
+          "tripDate": "2023-01-19",
+          "vehicleType":"NON-AC",
+          "fare": 500,
+          "direction": "UP"
+     },
+     {
+          "_id": "21trip15",
+          "status": true,
+          "tripCode": "3435",
+          "fromStoppage":"Cumilla",
+          "toStoppage":"Dhaka",
+          "tripDate": "2023-01-20",
+          "vehicleType":"AC",
+          "fare": 350,
+          "direction": "DOWN"
+     },
+     {
+          "_id": "12trip16",
+          "status": true,
+          "tripCode": "3637",
+          "fromStoppage":"Dhaka",
+          "toStoppage":"Mymensingh",
+          "tripDate": "2023-01-17",
+          "vehicleType":"NON-AC",
+          "fare": 350,
+          "direction": "UP"
+     },
+     {
+          "_id": "21trip17",
+          "status": true,
+          "tripCode": "3839",
+          "fromStoppage":"Barishal",
+          "toStoppage":"Dhaka",
+          "tripDate": "2023-01-18",
+          "vehicleType":"AC",
+          "fare": 600,
+          "direction": "DOWN"
+     },
+     {
+          "_id": "21trip18",
+          "status": true,
+          "tripCode": "4041",
+          "fromStoppage":"Cumilla",
+          "toStoppage":"Chattogram",
+          "tripDate": "2023-01-19",
+          "vehicleType":"NON-AC",
+          "fare": 1000,
+          "direction": "DOWN"
+     },
+     {
+          "_id": "21trip19",
+          "status": true,
+          "tripCode": "4243",
+          "fromStoppage":"Mymensingh",
+          "toStoppage":"Dhaka",
+          "tripDate": "2023-01-17",
+          "vehicleType":"NON-AC",
+          "fare": 350,
+          "direction": "DOWN"
+     },
+     {
+          "_id": "12trip20",
+          "status": true,
+          "tripCode": "4445",
+          "fromStoppage":"Cumilla",
+          "toStoppage":"Chattogram",
+          "tripDate": "2023-01-17",
+          "vehicleType":"AC",
+          "fare": 1200,
+          "direction": "UP"
+     },
+     {
+          "_id": "12trip21",
+          "status": true,
+          "tripCode": "4647",
+          "fromStoppage":"Dhaka",
+          "toStoppage":"Mymensingh",
+          "tripDate": "2023-01-18",
+          "vehicleType":"NON-AC",
+          "fare": 350,
+          "direction": "UP"
+     },
+     {
+          "_id": "21trip22",
+          "status": true,
+          "tripCode": "4849",
+          "fromStoppage":"Barishal",
+          "toStoppage":"Dhaka",
+          "tripDate": "2023-01-19",
+          "vehicleType":"AC",
+          "fare": 600,
+          "direction": "DOWN"
+     },
+     {
+          "_id": "21trip23",
+          "status": true,
+          "tripCode": "5051",
+          "fromStoppage":"Cumilla",
+          "toStoppage":"Chattogram",
+          "tripDate": "2023-01-20",
+          "vehicleType":"NON-AC",
+          "fare": 1200,
+          "direction": "DOWN"
+     },
+     {
+          "_id": "12tri24",
+          "status": true,
+          "tripCode": "5253",
+          "fromStoppage":"Dhaka",
+          "toStoppage":"Mymensingh",
+          "tripDate": "2023-01-17",
+          "vehicleType":"NON-AC",
+          "fare": 350,
+          "direction": "UP"
+     },
+     {
+          "_id": "12trip25",
+          "status": true,
+          "tripCode": "5455",
+          "fromStoppage":"Cumilla",
+          "toStoppage":"Mymensingh",
+          "tripDate": "2023-01-18",
+          "vehicleType":"AC",
+          "fare": 900,
+          "direction": "UP"
+     },
+     {
+          "_id": "12trip26",
+          "status": true,
+          "tripCode": "5657",
+          "fromStoppage":"Dhaka",
+          "toStoppage":"Mymensingh",
+          "tripDate": "2023-01-19",
+          "vehicleType":"NON-AC",
+          "fare": 350,
+          "direction": "UP"
+     },
+     {
+          "_id": "21trip27",
+          "status": true,
+          "tripCode": "5859",
+          "fromStoppage":"Barishal",
+          "toStoppage":"Dhaka",
+          "tripDate": "2023-01-20",
+          "vehicleType":"AC",
+          "fare": 600,
+          "direction": "DOWN"
+     },
+     {
+          "_id": "12trip28",
+          "status": true,
+          "tripCode": "6061",
+          "fromStoppage":"Cumilla",
+          "toStoppage":"Chattogram",
+          "tripDate": "2023-01-17",
+          "vehicleType":"NON-AC",
+          "fare": 1200,
+          "direction": "UP"
+     },
+     {
+          "_id": "12trip29",
+          "status": true,
+          "tripCode": "6263",
+          "fromStoppage":"Dhaka",
+          "toStoppage":"Mymensingh",
+          "tripDate": "2023-01-18",
+          "vehicleType":"NON-AC",
+          "fare": 350,
+          "direction": "UP"
+     },
+     {
+          "_id": "21trip30",
+          "status": true,
+          "tripCode": "6465",
+          "fromStoppage":"Cumilla",
+          "toStoppage":"Chattogram",
+          "tripDate": "2023-01-19",
+          "vehicleType":"NON-AC",
+          "fare": 700,
+          "direction": "DOWN"
+     },
+     {
+          "_id": "21trip31",
+          "status": true,
+          "tripCode": "6667",
+          "fromStoppage":"Mymensingh",
+          "toStoppage":"Dhaka",
+          "tripDate": "2023-01-20",
+          "vehicleType":"NON-AC",
+          "fare": 350,
+          "direction": "DOWN"
+     },
+     {
+          "_id": "21trip32",
+          "status": false,
+          "tripCode": "6869",
+          "fromStoppage":"Barishal",
+          "toStoppage":"Dhaka",
+          "tripDate": "2023-01-16",
+          "vehicleType":"AC",
+          "fare": 1000,
+          "direction": "DOWN"
+     },
+     {
+          "_id": "12trip33",
+          "status": true,
+          "tripCode": "7071",
+          "fromStoppage":"Cumilla",
+          "toStoppage":"Chattogram",
+          "tripDate": "2023-01-17",
+          "vehicleType":"AC",
+          "fare": 1200,
+          "direction": "UP"
+     },
+     {
+          "_id": "12trip34",
+          "status": true,
+          "tripCode": "7273",
+          "fromStoppage":"Dhaka",
+          "toStoppage":"Mymensingh",
+          "tripDate": "2023-01-18",
+          "vehicleType":"NON-AC",
+          "fare": 350,
+          "direction": "UP"
+     },
+     {
+          "_id": "12trip35",
+          "status": true,
+          "tripCode": "7475",
+          "fromStoppage":"Cumilla",
+          "toStoppage":"Chattogram",
+          "tripDate": "2023-01-19",
+          "vehicleType":"AC",
+          "fare": 1200,
+          "direction": "UP"
+     },
+     {
+          "_id": "12trip36",
+          "status": true,
+          "tripCode": "7677",
+          "fromStoppage":"Dhaka",
+          "toStoppage":"Mymensingh",
+          "tripDate": "2023-01-20",
+          "vehicleType":"NON-AC",
+          "fare": 350,
+          "direction": "UP"
+     },
+     {
+          "_id": "21trip37",
+          "status": false,
+          "tripCode": "7879",
+          "fromStoppage":"Barishal",
+          "toStoppage":"Dhaka",
+          "tripDate": "2023-01-16",
+          "vehicleType":"AC",
+          "fare": 600,
+          "direction": "DOWN"
+     },
+     {
+          "_id": "21trip38",
+          "status": true,
+          "tripCode": "8081",
+          "fromStoppage":"Cumilla",
+          "toStoppage":"Chattogram",
+          "tripDate": "2023-01-17",
+          "vehicleType":"NON-AC",
+          "fare": 1200,
+          "direction": "DOWN"
+     },
+     {
+          "_id": "12trip39",
+          "status": true,
+          "tripCode": "8283",
+          "fromStoppage":"Dhaka",
+          "toStoppage":"Mymensingh",
+          "tripDate": "2023-01-18",
+          "vehicleType":"NON-AC",
+          "fare": 350,
+          "direction": "UP"
+     },
+     {
+          "_id": "12trip40",
+          "status": true,
+          "tripCode": "8485",
+          "fromStoppage":"Cumilla",
+          "toStoppage":"Chattogram",
+          "tripDate": "2023-01-19",
+          "vehicleType":"AC",
+          "fare": 1200,
+          "direction": "UP"
+     },
+     {
+          "_id": "12trip41",
+          "status": true,
+          "tripCode": "8687",
+          "fromStoppage":"Dhaka",
+          "toStoppage":"Mymensingh",
+          "tripDate": "2023-01-20",
+          "vehicleType":"NON-AC",
+          "fare": 350,
+          "direction": "UP"
+     },
+     {
+          "_id": "21trip42",
+          "status": false,
+          "tripCode": "8889",
+          "fromStoppage":"Barishal",
+          "toStoppage":"Dhaka",
+          "tripDate": "2023-01-16",
+          "vehicleType":"AC",
+          "fare": 600,
+          "direction": "DOWN"
+     },
+     {
+          "_id": "21trip43",
+          "status": true,
+          "tripCode": "9091",
+          "fromStoppage":"Cumilla",
+          "toStoppage":"Chattogram",
+          "tripDate": "2023-01-17",
+          "vehicleType":"NON-AC",
+          "fare": 1200,
+          "direction": "DOWN"
+     },
+     {
+          "_id": "21trip44",
+          "status": true,
+          "tripCode": "9293",
+          "fromStoppage":"Dhaka",
+          "toStoppage":"Mymensingh",
+          "tripDate": "2023-01-18",
+          "vehicleType":"NON-AC",
+          "fare": 350,
+          "direction": "DOWN"
+     },
+     {
+          "_id": "12trip45",
+          "status": true,
+          "tripCode": "9495",
+          "fromStoppage":"Cumilla",
+          "toStoppage":"Chattogram",
+          "tripDate": "2023-01-19",
+          "vehicleType":"AC",
+          "fare": 1200,
+          "direction": "UP"
+     },
+     {
+          "_id": "12trip46",
+          "status": true,
+          "tripCode": "9697",
+          "fromStoppage":"Dhaka",
+          "toStoppage":"Mymensingh",
+          "tripDate": "2023-01-20",
+          "vehicleType":"NON-AC",
+          "fare": 350,
+          "direction": "UP"
+     },
+     {
+          "_id": "21trip47",
+          "status": false,
+          "tripCode": "9899",
+          "fromStoppage":"Barishal",
+          "toStoppage":"Dhaka",
+          "tripDate": "2023-01-14",
+          "vehicleType":"AC",
+          "fare": 600,
+          "direction": "DOWN"
+     },
+     {
+          "_id": "21trip48",
+          "status": false,
+          "tripCode": "1001",
+          "fromStoppage":"Cumilla",
+          "toStoppage":"Chattogram",
+          "tripDate": "2023-01-15",
+          "vehicleType":"NON-AC",
+          "fare": 1200,
+          "direction": "DOWN"
+     },
+     {
+          "_id": "12trip49",
+          "status": false,
+          "tripCode": "1021",
+          "fromStoppage":"Dhaka",
+          "toStoppage":"Mymensingh",
+          "tripDate": "2023-01-16",
+          "vehicleType":"NON-AC",
+          "fare": 350,
+          "direction": "UP"
+     },
+     {
+          "_id": "21trip50",
+          "status": true,
+          "tripCode": "1041",
+          "fromStoppage":"Cumilla",
+          "toStoppage":"Chattogram",
+          "tripDate": "2023-01-18",
+          "vehicleType":"AC",
+          "fare": 1200,
+          "direction": "DOWN"
+     },
+     {
+          "_id": "12trip51",
+          "status": false,
+          "tripCode": "1061",
+          "fromStoppage":"Dhaka",
+          "toStoppage":"Mymensingh",
+          "tripDate": "2023-01-14",
+          "vehicleType":"NON-AC",
+          "fare": 350,
+          "direction": "UP"
+     },
+     {
+          "_id": "21trip52",
+          "status": false,
+          "tripCode": "1081",
+          "fromStoppage":"Barishal",
+          "toStoppage":"Dhaka",
+          "tripDate": "2023-01-15",
           "vehicleType":"AC",
           "fare": 600,
           "direction": "DOWN"

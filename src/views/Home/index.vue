@@ -38,10 +38,10 @@
      })
 
      const sortTripList = ((order)=>{
-          if(order === 'asc') {
-               tripData.value.sort((a,b) => (a.fare > b.fare) ? 1 : ((b.fare > a.fare) ? -1 : 0));
-          } else {
+          if(order === 'dsc') {
                tripData.value.sort((a,b) => (a.fare < b.fare) ? 1 : ((b.fare < a.fare) ? -1 : 0));
+          } else {
+               tripData.value.sort((a,b) => (a.fare > b.fare) ? 1 : ((b.fare > a.fare) ? -1 : 0));
           }
      })
 

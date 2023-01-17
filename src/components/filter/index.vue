@@ -5,21 +5,21 @@
                     <div class="flex justify-between gap-x-3">
                          <dropdown
                               :id="'fromStoppage'"
-                              :label="'From Stoppage'"
+                              :label="'Select From Stoppage'"
                               v-model="filterData.fromStoppage"
                               :options="props.boarding"
-                              :defaultOption="'-Select From Stoppage-'"
+                              :defaultOption="'Select From Stoppage'"
                          />
                          <dropdown
                               :id="'toStoppage'"
-                              :label="'To Stoppage'"
+                              :label="'Select To Stoppage'"
                               v-model="filterData.toStoppage"
                               :options="props.dropping"
-                              :defaultOption="'-Select To Stoppage-'"
+                              :defaultOption="'Select To Stoppage'"
                          />
                          <date
                               :id="'tripdate'"
-                              :label="'Trip Date'"
+                              :label="'Select Trip Date'"
                               v-model="filterData.tripdate"
                          />
                     </div>
@@ -37,14 +37,14 @@
                     />
                     <vehicleTypeFilter
                          :id="'selectType'"
-                         :label="'Select Type'"
+                         :label="'Select Vehicle Type'"
                          v-model="modifyFilterData.vehicleType"
                     />
                     <priceFilter
                          :id="'sortBy'"
-                         :label="'Sort By'"
+                         :label="'Sort By Price'"
                          v-model="modifyFilterData.sortBy"
-                         :defaultOption="'-Sort By-'"
+                         :defaultOption="'Sort By Order'"
                     />
                     
                </div>
