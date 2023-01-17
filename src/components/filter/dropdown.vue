@@ -1,6 +1,6 @@
 <template>
      <div class="flex flex-col gap-y-1 bg-white border p-3 rounded-lg w-1/3">
-          <label :for="props.id">{{label}}</label>
+          <label :for="props.id" class="font-semibold">{{label}}</label>
           <select :id="props.id" v-model="stoppage">
                <option value="">{{ defaultOption }}</option>
                <option v-for="(option, index) in stoppages" :key="index" :value="option">{{option}}</option>

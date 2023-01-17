@@ -1,6 +1,6 @@
 <template>
      <div class="flex flex-col gap-y-1 bg-white border p-3 rounded-lg w-1/3">
-          <label :for="props.id">{{label}}</label>
+          <label :for="props.id" class="font-semibold">{{label}}</label>
           <input :id="props.id" type="date" v-model="tripDate">
      </div>
 </template>
@@ -15,7 +15,6 @@
      })
      const tripDate = ref(props.modelValue)
      const emit = defineEmits(['update:modelValue'])
-
      watch(
           () => tripDate.value,
           () => {
