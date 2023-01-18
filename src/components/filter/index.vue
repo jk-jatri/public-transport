@@ -1,5 +1,5 @@
 <template>
-     <div class="rounded-lg bg-gray-100 border border-gray-300 p-3">
+     <div class="h-[230px] rounded-lg bg-gray-100 border border-gray-300 p-3">
           <div class="divide-y divide-gray-400">
                <form @submit.prevent="submitForm(filterData)" class="flex justify-start gap-x-3 pb-3">
                     <div class="w-3/4">
@@ -19,9 +19,9 @@
                                    :defaultOption="'Select To Stoppage'"
                               />
                               <date
-                                   :id="'tripdate'"
+                                   :id="'tripDate'"
                                    :label="'Select Trip Date'"
-                                   v-model="modifyFilterData.tripdate"
+                                   v-model="modifyFilterData.tripDate"
                               />
                          </div>
                     </div>
@@ -34,7 +34,7 @@
                          <dayWiseFilter
                               :id="'dayWiseFilter'"
                               :label="'Day Wise Filter'"
-                              v-model="modifyFilterData.tripdate"
+                              v-model="modifyFilterData.tripDate"
                          />
                          <vehicleTypeFilter
                               :id="'selectType'"
@@ -52,7 +52,7 @@
                     <div class="w-1/4"></div>
                </div>
           </div>
-          <p>Showing Result For: <b>{{ filterData.tripdate}}</b></p>
+          <p>Showing Result For: <b>{{ filterData.tripDate}}</b></p>
      </div>
 </template>
 
@@ -72,14 +72,14 @@
      const filterData = ref({
           fromStoppage : "",
           toStoppage : "",
-          tripdate : new Date().toISOString().split('T')[0],
-          vehicleType: "ALl",
+          tripDate : new Date().toISOString().split('T')[0],
+          vehicleType: null,
           sortBy: ""
      })
 
      const modifyFilterData = ref({
-          tripdate: new Date().toISOString().split('T')[0],
-          vehicleType: "All",
+          tripDate: new Date().toISOString().split('T')[0],
+          vehicleType: null,
           sortBy: ""
      })
 
@@ -90,9 +90,9 @@
      })
 
      watch(
-          () => modifyFilterData.value.tripdate,
+          () => modifyFilterData.value.tripDate,
           () => {
-               filterData.value.tripdate = modifyFilterData.value.tripdate
+               filterData.value.tripDate = modifyFilterData.value.tripDate
                emit("filterTripList", modifyFilterData.value);
           }
      )
@@ -100,7 +100,6 @@
      watch(
           () => modifyFilterData.value.vehicleType,
           () => {
-               console.log("modifyFilterData.value.vehicleType");
                emit("filterTripList", modifyFilterData.value);
           }
      )

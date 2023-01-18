@@ -1,28 +1,26 @@
 <template>
      <div class="bg-gray-100 h-screen p-20">
-          <div class="bg-white border border-gray-300 overflow-y-auto h-[calc(100vh-150px)] rounded-xl p-5">
+          <div class="bg-white border border-gray-300 h-[calc(100vh-150px)] rounded-xl p-5">
                <filterComponent
                     :boarding="fromStoppages"
                     :dropping="toStoppages"
                     @filterTripList="tripListRender"
                     @sortList="sortTripList"
                />
-               <div class="mt-5">
-                    <triplist :trips="tripData"/>
-               </div>
+               <triplist :trips="tripData" :sortOrder = "sortingOrder"/>
           </div>
      </div>
 </template>
 
 <script setup>
-     import { onBeforeMount, ref } from 'vue';
+     import { ref } from 'vue';
      import availabletrips from '@/assets/json/trip.json';
      import triplist from '@/components/tripList/index.vue';
      import filterComponent from '@/components/filter/index.vue'
-
+     const sortingOrder = ref('')
      const fromStoppages = ref({})
      const toStoppages = ref({})
-     const tripData = ref(availabletrips)
+     let tripData = ref(availabletrips)
      const filteredTable = ref({})
 
      const tripListRender = ((filterData)=>{
@@ -30,14 +28,17 @@
                let result = true 
                filterData.fromStoppage && (result &&= item.fromStoppage === filterData.fromStoppage)
                filterData.toStoppage && (result &&= item.toStoppage === filterData.toStoppage)
-               filterData.tripdate && (result &&= item.tripDate === filterData.tripdate)
+               filterData.tripDate && (result &&= item.tripDate === filterData.tripDate)
                filterData.vehicleType && (result &&= item.vehicleType.toLowerCase() === filterData.vehicleType.toLowerCase())
                return result
           })
           tripData.value = filteredTable.value
      })
 
+
+
      const sortTripList = ((order)=>{
+          sortingOrder.value = order
           if(order === 'dsc') {
                tripData.value.sort((a,b) => (a.fare < b.fare) ? 1 : ((b.fare < a.fare) ? -1 : 0));
           } else {
