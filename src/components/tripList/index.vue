@@ -39,45 +39,45 @@
                     <tr v-if="tripActive === item._id">
                          <td colspan="9" class="p-3">
                               <div class="rounded-lg border border-slate-400 p-5">
-                                   <table class="border-collapse border border-slate-300 mx-auto table-auto w-1/2">
-                                        <tr class="odd:bg-slate-50 even:bg-slate-100">
-                                             <th class="border border-slate-300 text-center">Trip Id</th> 
+                                   <table class="border-collapse border border-slate-300 mx-auto table-auto w-1/3">
+                                        <tr class="odd:bg-slate-50 even:bg-slate-100 h-10">
+                                             <th class="border border-slate-300 text-left w-[200px] pl-4">Trip Id</th> 
                                              <td class="border border-slate-300 text-center">{{tripDetails._id}}</td>
                                         </tr>
-                                        <tr class="odd:bg-slate-50 even:bg-slate-100">
-                                             <th class="border border-slate-300 text-center">Trip Code</th> 
+                                        <tr class="odd:bg-slate-50 even:bg-slate-100 h-10">
+                                             <th class="border border-slate-300 text-left w-[200px] pl-4">Trip Code</th> 
                                              <td class="border border-slate-300 text-center">{{tripDetails.tripCode}}</td>
                                         </tr>
-                                        <tr class="odd:bg-slate-50 even:bg-slate-100">
-                                             <th class="border border-slate-300 text-center">From Stoppage</th> 
+                                        <tr class="odd:bg-slate-50 even:bg-slate-100 h-10">
+                                             <th class="border border-slate-300 text-left w-[200px] pl-4">From Stoppage</th> 
                                              <td class="border border-slate-300 text-center">{{tripDetails.fromStoppage}}</td>
                                         </tr>
-                                        <tr class="odd:bg-slate-50 even:bg-slate-100">
-                                             <th class="border border-slate-300 text-center">To Stoppage</th> 
+                                        <tr class="odd:bg-slate-50 even:bg-slate-100 h-10">
+                                             <th class="border border-slate-300 text-left w-[200px] pl-4">To Stoppage</th> 
                                              <td class="border border-slate-300 text-center">{{tripDetails.toStoppage}}</td>
                                         </tr>
-                                        <tr class="odd:bg-slate-50 even:bg-slate-100">
-                                             <th class="border border-slate-300 text-center">Trip date</th> 
+                                        <tr class="odd:bg-slate-50 even:bg-slate-100 h-10">
+                                             <th class="border border-slate-300 text-left w-[200px] pl-4">Trip date</th> 
                                              <td class="border border-slate-300 text-center">{{tripDetails.tripDate}}</td>
                                         </tr>
-                                        <tr class="odd:bg-slate-50 even:bg-slate-100">
-                                             <th class="border border-slate-300 text-center">Vehicle Type</th> 
+                                        <tr class="odd:bg-slate-50 even:bg-slate-100 h-10">
+                                             <th class="border border-slate-300 text-left w-[200px] pl-4">Vehicle Type</th> 
                                              <td class="border border-slate-300 text-center">{{tripDetails.vehicleType}}</td>
                                         </tr>
-                                        <tr class="odd:bg-slate-50 even:bg-slate-100">
-                                             <th class="border border-slate-300 text-center">Trip Fare</th> 
+                                        <tr class="odd:bg-slate-50 even:bg-slate-100 h-10">
+                                             <th class="border border-slate-300 text-left w-[200px] pl-4">Trip Fare</th> 
                                              <td class="border border-slate-300 text-center">{{tripDetails.fare}}</td>
                                         </tr>
-                                        <tr class="odd:bg-slate-50 even:bg-slate-100">
-                                             <th class="border border-slate-300 text-center">Trip Direction</th> 
+                                        <tr class="odd:bg-slate-50 even:bg-slate-100 h-10">
+                                             <th class="border border-slate-300 text-left w-[200px] pl-4">Trip Direction</th> 
                                              <td class="border border-slate-300 text-center">{{tripDetails.direction}}</td>
                                         </tr>
-                                        <tr class="odd:bg-slate-50 even:bg-slate-100">
-                                             <th class="border border-slate-300 text-center">Trip Status</th> 
+                                        <tr class="odd:bg-slate-50 even:bg-slate-100 h-10">
+                                             <th class="border border-slate-300 text-left w-[200px] pl-4">Trip Status</th> 
                                              <td class="border border-slate-300 text-center">
-                                                  <span class="text-white px-1 rounded-md text-sm" :class="tripDetails.status ? 'bg-green-700': 'bg-red-700'">
+                                                  <div class="w-1/2 mx-auto text-white px-1 py-1 rounded-md text-sm" :class="tripDetails.status ? 'bg-green-700': 'bg-red-700'">
                                                        {{tripDetails.status ? 'Active' : 'Inactive'}}
-                                                  </span>
+                                                  </div>
                                              </td>
                                         </tr>
                                    </table>
