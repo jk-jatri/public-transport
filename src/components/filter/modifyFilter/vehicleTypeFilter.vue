@@ -22,7 +22,7 @@
           label: {type: String},
           modelValue: {type: String},
      })
-     const vehicleTypes = ref(["ac" , "non-ac"]);
+     const vehicleTypes = ref(["Ac" , "Non-Ac"]);
 
      const emit = defineEmits(['update:modelValue'])
      const vehicleType = ref(props.modelValue)
