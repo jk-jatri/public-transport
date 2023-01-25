@@ -23,15 +23,18 @@
      let tripData = ref(availabletrips)
      const filteredTable = ref({})
 
-     const tripListRender = ((filterData)=>{
+     const tripListRender = ((filterValue)=>{
+          console.log('filteredTripList');
           filteredTable.value = availabletrips.filter((item)=>{
                let result = true 
-               filterData.fromStoppage && (result &&= item.fromStoppage === filterData.fromStoppage)
-               filterData.toStoppage && (result &&= item.toStoppage === filterData.toStoppage)
-               filterData.tripDate && (result &&= item.tripDate === filterData.tripDate)
-               filterData.vehicleType && (result &&= item.vehicleType.toLowerCase() === filterData.vehicleType.toLowerCase())
+               filterValue.fromStoppage && (result &&= item.fromStoppage === filterValue.fromStoppage)
+               filterValue.toStoppage && (result &&= item.toStoppage === filterValue.toStoppage)
+               filterValue.tripDate && (result &&= item.tripDate === filterValue.tripDate)
+               filterValue.vehicleType && (result &&= item.vehicleType.toLowerCase() === filterValue.vehicleType.toLowerCase())
                return result
           })
+          console.log(filterValue);
+          console.log(filteredTable.value);
           tripData.value = filteredTable.value
      })
 

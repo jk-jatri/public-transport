@@ -62,7 +62,7 @@
      import dayWiseFilter from '@/components/filter/modifyFilter/dateFilter.vue';
      import vehicleTypeFilter from '@/components/filter/modifyFilter/vehicleTypeFilter.vue';
      import priceFilter from '@/components/filter/modifyFilter/priceFilter.vue';
-     import { ref, watch } from 'vue';
+     import { onBeforeMount, onMounted, ref, watch } from 'vue';
 
      const props = defineProps({
           boarding: {type: Object},
@@ -87,6 +87,10 @@
 
      const submitForm = ((data)=> {
           emit("filterTripList", data);
+     })
+
+     onBeforeMount(()=>{
+          submitForm(filterData.value);
      })
 
      watch(

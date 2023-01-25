@@ -102,8 +102,6 @@
      let tripData = ref({})
      let allTrips = ref([]);
 
-
-
      let perPage = ref(15);
      let loadedData = ref(15);
      let respondedData = ref(15);
@@ -113,13 +111,13 @@
           tripDetails.value = tripInfo
      }
      
-          watch(
-               () => props.trips,
-               () => {
-                    tripData.value = props.trips
-                    allTrips.value = props.trips.slice(0, perPage.value);
-               }
-          )
+     watch(
+          () => props.trips,
+          () => {
+               tripData.value = props.trips
+               allTrips.value = props.trips.slice(0, perPage.value);
+          }
+     )
 
      watch(
           () => props.sortOrder,
