@@ -91,7 +91,7 @@
 </template>
 
 <script setup>
-     import { onBeforeMount, ref, watch } from 'vue';
+     import { ref, watch } from 'vue';
 
      const props = defineProps({
           trips: {type: Object},

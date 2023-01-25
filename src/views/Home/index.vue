@@ -24,7 +24,6 @@
      const filteredTable = ref({})
 
      const tripListRender = ((filterValue)=>{
-          console.log('filteredTripList');
           filteredTable.value = availabletrips.filter((item)=>{
                let result = true 
                filterValue.fromStoppage && (result &&= item.fromStoppage === filterValue.fromStoppage)
@@ -33,8 +32,6 @@
                filterValue.vehicleType && (result &&= item.vehicleType.toLowerCase() === filterValue.vehicleType.toLowerCase())
                return result
           })
-          console.log(filterValue);
-          console.log(filteredTable.value);
           tripData.value = filteredTable.value
      })
 
