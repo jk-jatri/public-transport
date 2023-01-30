@@ -2,13 +2,13 @@
      <div class="flex flex-col gap-y-1 bg-white border p-3 rounded-lg w-1/3">
           <label :for="props.id" class="font-semibold">{{label}}</label>
           <div class="flex justify-start gap-x-2">
-               <div v-for="(item, index) in vehicleTypes" :key="index"> 
+               <div v-for="(type, index) in vehicleTypes" :key="index"> 
                     <input 
-                         :id="item" type="checkbox" 
-                         @click="filterByVehicleType(item)" 
-                         :checked="vehicleType === item"
+                         :id="type" type="checkbox" 
+                         @click="filterByVehicleType(checked ? type : '')" 
+                         :checked="vehicleType === type"
                     >
-                    <label :for="item">{{item}}</label>
+                    <label :for="type">{{type}}</label>
                </div>
           </div>
 
@@ -28,6 +28,7 @@
      const vehicleType = ref(props.modelValue)
      
      const filterByVehicleType = (type) =>{
+          console.log("type=>", type);
           vehicleType.value = type
           emit("update:modelValue", vehicleType.value)
      }
